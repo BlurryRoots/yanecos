@@ -47,8 +47,8 @@ public void update( double someDeltaSeconds ){
 	dataCenter.updateDelta( someDeltaSeconds );
 
 	//and then tell the processors to process
-	DataCenter.getProcessor( MovementProcessor.class ).process();
-	DataCenter.getProcessor( ConsoleProcessor.class ).process();
+	dataCenter.getProcessor( MovementProcessor.class ).process();
+	dataCenter.getProcessor( ConsoleProcessor.class ).process();
 }
 ```
 
